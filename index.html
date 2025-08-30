@@ -1,37 +1,176 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Drop Down</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jonard</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1 id = "logo">Jonard</h1>
+    <header>
+        <video autoplay muted loop id="herovid">
+            <source src="headingvid.mp4" type="video/mp4">
+        </video>
         <nav>
-            <ul>
-                <li>
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#galleryPics">Gallery</a>
-                </li>
+            <ul class="nav-links">
+                <li><h1>Jonard</h1></li>
+                <li><a href="#"><ion-icon name="home"></ion-icon>Home</a></li>
+                <li><a href="#about"><ion-icon name="information-circle-outline"></ion-icon>About</a></li>
+                <li><a href="#contact"><ion-icon name="contact"></ion-icon>Contact</a></li>
+                <li><a href="#services"><ion-icon name="briefcase"></ion-icon>Services</a></li>
             </ul>
         </nav>
-    </div>
+        <section class="herooverlay">
+            <div class="intro">
+                <h2>HELLO I'M JONARD,</h2>
+                <p>Your one-stop solution for all your needs.</p>
+                <div class="herobuttons">
+                    <a href="#contact" class="btn">HIRE ME</a>
+                    <a href="#socials" class="btn">SOCIALS</a>
+                </div>
+            </div>
+            <div class="myImage"></div>
+        </section>
+    </header>
 
-    <div class = galleryContainer>
-        <h1 id = "galleryPics">Image Gallery</h1>
-        <div class = "contents" id = "gallery">
-        <img src="pic1.webp" alt="pic1"/>
-        <img src="pic2.webp" alt="pic2"/>
-        <img src="pic3.webp" alt="pic3"/>
-        <img src="pic4.avif" alt="pic4"/>
-        <img src="pic5.avif" alt="pic5"/>
-        <img src="pic6.avif" alt="pic6"/>
-        <img src="pic7.avif" alt="pic7"/>
-        <img src="pic8.avif" alt="pic8"/>
-        <img src="pic9.avif" alt="pic9"/>
-    </div>
-</div>
+    <main class="mainSection">
+        <section id ="about" class="about">
+            <h2>About</h2>
+            <p>
+                Hello! I'm Jonard, a passionate developer dedicated to creating innovative solutions that make a difference.
+                With a strong background in web development and a keen eye for design, I strive to deliver exceptional results for my clients.
+                Whether it's building responsive websites, developing custom applications, or optimizing user experiences,
+                I am committed to excellence in every project I undertake. Let's work together to bring your ideas to life and achieve your goals!
+            </p>
+            <p>
+                My expertise includes HTML, CSS, JavaScript, and various frameworks such as React and Angular.
+                I am also proficient in backend technologies like Node.js and Express, allowing me to create full-stack solutions.
+                In addition to my technical skills, I am a strong communicator and collaborator, ensuring that I understand your vision and deliver results that exceed your expectations.
+                Let's connect and explore how we can work together to create something amazing!
+            </p>
+            <p>
+                Outside of work, I enjoy staying up-to-date with the latest industry trends, attending tech meetups, and contributing to open-source projects.
+                I believe in continuous learning and growth, and I am always looking for new challenges to expand my skill set.
+                When I'm not coding, you can find me exploring the outdoors, reading tech blogs, or experimenting with new recipes in the kitchen.
+                Let's connect and see how we can collaborate on your next project!
+            </p>
+        </section>
+    </main>
+    <main class="secondMain">
+        <section id ="services" class="services">
+            <h2>My Services</h2>
+            <ul>
+                <li>
+                    <label for = "HTML"><ion-icon name="logo-html5"></ion-icon></label>
+                    <h3>HTML</h3>
+                    <p id = "HTML">
+                        In the world of engineering I mastered the art of structuring,
+                        designing, and bringing ideas to life through the power of HTML.
+                        I myself dedicated to creating seamless and engaging user experiences
+                        that leave a lasting impression.
+                        With my expertise in HTML, I can transform your vision into a stunning reality.
+                    </p>
+                </li>
+                <li>
+                    <label for = "CSS"><ion-icon name="logo-css3"></ion-icon></label>
+                    <h3>CSS</h3>
+                    <p id = "CSS">
+                        In the realm of engineering, I have honed my skills in CSS to create visually captivating
+                        and responsive designs that elevate user experiences. With a keen eye for aesthetics and
+                        a deep understanding of design principles, I bring creativity and innovation to every project.
+                        Let me transform your ideas into stunning realities with the power of CSS.
+                    </p>
+                </li>
+                <li>
+                    <label for = "JavaScript"><ion-icon name="logo-javascript"></ion-icon></label>
+                    <h3>JavaScript</h3>
+                    <p id = "JavaScript">
+                        In the vastness of complexity, I have mastered the art of JavaScript to create dynamic
+                        and interactive web experiences that captivate users. With a deep understanding of
+                        programming concepts and a passion for innovation, I bring ideas to life through
+                        seamless functionality and engaging user interfaces. Let me transform your vision
+                        into reality with the power of JavaScript.
+                    </p>
+                </li>
+                <li>
+                    <label for = "DEBUGGING" ><ion-icon name="bug"></ion-icon></label>
+                    <h3 id = "DEBUGGING">Debugging</h3>
+                    <p>
+                        In the intricate world of engineering, I have mastered the art of debugging to ensure
+                        flawless performance and optimal functionality. With a keen eye for detail and a
+                        systematic approach, I identify and resolve issues efficiently, ensuring seamless
+                        user experiences. Let me bring clarity and precision to your projects through
+                        expert debugging techniques.
+                    </p>
+                </li>
+                <li>
+                    <label for = "SEO"><ion-icon name="search"></ion-icon></label>
+                    <h3>SEO</h3>
+                    <p id = "SEO">
+                        In the ever-evolving landscape of engineering, I have mastered the art of SEO to
+                        enhance online visibility and drive organic traffic. With a deep understanding of
+                        search engine algorithms and user behavior, I implement strategic techniques to
+                        optimize websites and improve rankings. Let me help you unlock the full potential
+                        of your online presence through effective SEO strategies.
+                    </p>
+                </li>
+                <li>
+                    <label for = "RESPONSIVE"><ion-icon name="phone-portrait"></ion-icon></label>
+                    <h3>Responsive Design</h3>
+                    <p id = "RESPONSIVE">
+                        In the dynamic world of engineering, I have mastered the art of responsive design
+                        to create seamless and engaging user experiences across all devices. With a deep
+                        understanding of design principles and user behavior, I craft visually captivating
+                        and intuitive interfaces that adapt flawlessly to different screen sizes. Let me
+                        bring your ideas to life with the power of responsive design.
+                    </p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+
+    <main class="thirdMain">
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+
+            <div class="contact-grid">
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Send</button>
+                </form>
+
+                <aside class="contactinfo">
+                    <h3>Contact Information</h3>
+                    <h4><ion-icon name="compass"></ion-icon>My Location</h4>
+                    <a href="https://www.google.com/maps/place/Daro,+Dumaguete+City,+Negros+Oriental/@9.3177981,123.2974875,16z/data=!3m1!4b1!4m6!3m5!1s0x33ab6f0295d77277:0x2f8b3a291e10cf26!8m2!3d9.3177068!4d123.3023108!16s%2Fg%2F11fyxbdw3h?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D">Dumaguete, Philippines</a>
+                    <h4><ion-icon name="call"></ion-icon>Tell no.</h4>
+                    <p>+639461747525</p>
+                    <h4><ion-icon name="mail"></ion-icon>Email</h4>
+                    <a href = "mailto: jonardbandico8@gmail.com">jonardbandico8@gmail.com</a>
+                </aside>
+            </div>
+        </section>
+    </main>
+   <footer id = "socials">
+        <p>© 2024 Jonard. All rights reserved.</p>
+        <div class="socials">
+            <a href="https://web.facebook.com/jonard.bandico.2024" id = "fb"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="https://x.com/codewisdom?lang=en" id = "x"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="https://no.linkedin.com/in/per-harald-borgen?trk=public_post_reshare_feed-actor-name" id = "linkedin"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="https://github.com/Psynard"><ion-icon name="logo-github" id = "github"></ion-icon></a>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 </html>
